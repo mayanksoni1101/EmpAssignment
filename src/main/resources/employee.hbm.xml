@@ -1,0 +1,16 @@
+<hibernate-mapping>
+<class name="org.jsp.emp.Employee" table="emp">
+
+<id name="id" column="eid">
+<generator class="identity"></generator>
+</id>
+
+<property name="name" column="ename"></property>
+<property name = "phone" column = "phone" unique="true"></property>
+<property name = "email" column = "email" unique="true"></property>
+<property name = "designation" column = "designation"></property>
+<property name = "password" column="password"></property>
+<property name="salary" column="sal"></property>
+
+</class>
+</hibernate-mapping>
